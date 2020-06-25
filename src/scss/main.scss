@@ -1,13 +1,32 @@
 @import "~normalize.css";
 
 @import "_variables";
-@import "modules/hello.scss";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 body {
-  background: $wtf;
+  background: #24292e;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+
+
+.main {
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  line-height: 24px;
+  letter-spacing: 1px;
+
+
+  &__heading {
+    text-align: center;
+  }
+}
+
+.fa-github {
+  color: #fff;
+  position: absolute;
+  right: 0;
 }
